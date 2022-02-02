@@ -26,4 +26,8 @@ export class Customer {
         name: "updated_at"
     })
     updatedAt: Date;
+
+    @Column()
+    cnpj: number;
+
 }
