@@ -1,7 +1,7 @@
 import {Column, CreateDateColumn, Entity, PrimaryGeneratedColumn} from "typeorm";
 
-@Entity('class')
-export class Class {
+@Entity('customer')
+export class Customer {
 
     @PrimaryGeneratedColumn()
     id!: string;
@@ -12,8 +12,10 @@ export class Class {
     })
     name!: string;
 
-    @Column()
-    duration!: number;
+    @Column('boolean', {
+        default: false
+    })
+    deleted: boolean;
 
     @CreateDateColumn({
         name: "created_at"
@@ -24,7 +26,4 @@ export class Class {
         name: "updated_at"
     })
     updatedAt: Date;
-
-    @Column()
-    year!: number;
 }
