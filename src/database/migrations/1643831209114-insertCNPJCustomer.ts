@@ -6,7 +6,7 @@ export class insertCNPJCustomer1643831209114 implements MigrationInterface {
         await queryRunner.addColumn("customer", new TableColumn(
             {
             name: "cnpj",
-            type: "int",
+            type: "varchar",
             }
         ));
     }

@@ -4,7 +4,7 @@
    "port": "5445",
    "username": "postgres",
    "password": "12345678",
-   "database": "migrations-poc",
+   "database": "migrt",
    "synchronize": false,
    "logging": false,
    "entities": [

@@ -21,7 +21,7 @@ baixar o projeto do github ou o zip que disponibilizei.
 segue o modelo de criação das migrations:
 
 1 - Criação
-yarn run typeorm migration:create -- -n nomeDaMigration
+yarn typeorm migration:create -n nomeDaMigration
 
 obs.: após rodar o script acima, notará que ele segue um padrão como no exemplo: 1643745718028-nomeDaMigration.ts
 
@@ -33,7 +33,7 @@ queryRunner.createTable( new Table({ name: "", columns: [{name: "", type: ""}] )
 queryRunner.dropTable("");
 
 4 - Rodar Script
-yarn run typeorm migration:run
+yarn typeorm migration:run 
 
 5 - criar o model, service, controller..
 

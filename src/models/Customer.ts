@@ -28,6 +28,6 @@ export class Customer {
     updatedAt: Date;
 
     @Column()
-    cnpj: number;
+    cnpj: string;
 
 }
